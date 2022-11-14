@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Noto+Serif+Oriya:wght@400;500&display=swap');
+
+/* To be commented out */
+
+[class*="col"] {
+    background-color: azure;
+}
+
+.spacing {
+    padding: 40px 80px;
+    width: 60% !important;
+}
+
+.header-text {
+    font-family: 'Merriweather', serif;
+}
+
+.img-row {
+    height: 25rem;
+   
+}
+
+.image {
+    width: 70%;
+    height: auto;
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    font-family: 'Noto Serif Oriya', serif;
+    font-size: 10px;
+    font-weight: 500px;
+}

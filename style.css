@@ -1,33 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Noto+Serif+Oriya:wght@400;500&display=swap');
-
-/* To be commented out */
-
-[class*="col"] {
-    background-color: azure;
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-bottom: 1em;
 }
 
-.spacing {
-    padding: 40px 80px;
-    width: 60% !important;
+.container {
+    /* background-color: aqua; */
+    width: 80%;
 }
 
-.header-text {
-    font-family: 'Merriweather', serif;
+.header {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
-.img-row {
-    height: 25rem;
-   
+.subheading {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.about {
+    font-weight: 400;
+}
+
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(14em, auto);
+    align-items: start;
+    gap: 2em;
+    margin-bottom: 5em;
 }
 
 .image {
-    width: 70%;
-    height: auto;
+    width: 100%;
 }
 
-.vertical-text {
+/* .img-item:nth-child(2n) {
+    align-self: end;
+} */
+
+/* .item-2 {
+    align-self: end;   
+} */
+
+.name {
+    font-size: 0.7rem;
+}
+
+.designation {
+    font-size: 0.5rem;
+    margin-left: 0;
     writing-mode: vertical-lr;
-    font-family: 'Noto Serif Oriya', serif;
-    font-size: 10px;
-    font-weight: 500px;
+}
+
+.footer {
+    font-size: 0.6rem;
+    text-align: center;
+    height: 10%;
+}
+
+@media (min-width: 391px) {
+    .img-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(31em, auto);
+    }
+
+    .img-item:nth-child(3n + 2) {
+        align-self: end;
+    }
+}
+
+@media not all and (min-width: 391px) {
+    .img-item:nth-child(2n) {
+        align-self: end;
+    }
 }
